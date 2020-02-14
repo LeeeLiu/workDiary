@@ -1,0 +1,47 @@
+脚本1: 名称随意
+filename = 'ZeldaCG.jpg'; % 改为自己图像的名字
+
+img = imread(filename);
+[row, col, ~] = size(img);
+img = img(1:floor(row/8)*8, 1:floor(col/8)*8, :); % 将图像的宽和高截断为 8 的倍数
+[row, col, channels] = size(img);
+img = im2double(img); % 将图像变为 double 表示
+
+T = dctmtx(8);
+
+dct_img = zeros([row, col, channels]);
+idct_img = zeros([row col channels]); 
+
+fun2dct = @(block_struct) T*block_struct.data*T';
+fun2idct = @(block_struct) T\block_struct.data/T';
+fun2clip = @clip_dct_coef;
+
+for channel = 1:channels
+     dct_img(:, :, channel) = blkproc(img(:, :, channel), [8 8], ...
+         'P1*x*P2', T, T');
+    %上面的注释 与 本注释 下面的一行 均是分块 DCT
+    % dct_img(:, :, channel) = blockproc(img(:, :, channel), [8 8], fun2dct);
+    cliped_img = blockproc(dct_img(:, :, channel), [8 8], fun2clip);
+    idct_img(:, :, channel) = blockproc(cliped_img, [8 8], fun2idct);
+end
+
+% disp
+subplot(131);imshow(img);
+subplot(132);imshow(dct_img);
+subplot(133);imshow(idct_img);
+
+函数2: 名称 clip_dct_coef.m
+function [outputArg1] = clip_dct_coef(block_struct)
+    outputArg1 = zeros(8);
+    keep = 1;
+    outputArg1(1:keep, 1:keep) = block_struct.data(1:keep, 1:keep);
+end
+
+文件结构：（群中有图片）
+
+src:
+-脚本1
+-函数2
+-图像
+
+结果（群中有图片）

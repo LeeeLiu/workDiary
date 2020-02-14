@@ -1,0 +1,23 @@
+
+
+void qs(vector<int>& array, int l, int r)
+{
+	if(l>r)
+		return;
+	int i=l, j=r, pivot=array[l]; //最左边元素为主元
+	while(i!=j)
+	{
+		while(array[j]>=pivot && i<j)	//右->左
+			j--;
+		while(array[i]<=pivot && i<j)	//左->右
+			i++;
+		//交换
+		if(i<j)
+			swap(array[i], array[j]);					
+	}
+	//pivot归位
+	swap(array[i], array[l]);
+	//递归
+	qs(array, l, i-1);
+	qs(array, i+1, r);
+}
