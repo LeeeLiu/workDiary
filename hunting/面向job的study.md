@@ -1,13 +1,16 @@
 
 
+[byteDance](https://leetcode-cn.com/explore/interview/card/bytedance/242/string/
+[Tencent](https://leetcode-cn.com/explore/interview/card/tencent/224/sort-and-search/932/)
+
 ### plan
 >不可突击的
 1. 做好自己的project
 2. code分类顺序：标签 ----> 公司
     - [按公司分类](https://github.com/MysteryVaibhav/leetcode_company_wise_questions)
-    - [题型分类](https://zhuanlan.zhihu.com/p/104983442)
+    - [LeetCode按照怎样的顺序来刷-知乎](https://zhuanlan.zhihu.com/p/104983442)
     - NiuKe
-    - 领扣有腾讯、字节题；[卡片](https://leetcode-cn.com/explore/)
+    - 领扣有腾讯、字节题[卡片](https://leetcode-cn.com/explore/)
 >可突击的
 3. 知识(比如机器/深度学习)
 
