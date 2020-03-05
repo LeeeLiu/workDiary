@@ -12,11 +12,17 @@
 
 ### 找code练习
 1. 图
-    - [lintcode](176. 图中两个点之间的路线)  邻接表存储的。。。
-    - [lintcode](814. 无向图中的最短路径) 邻接表存储的。。。
-    - [lintcode]单词接龙
+    - 邻接表
+        - [lintcode](176. 图中两个点之间的路线)  
+        - [lintcode](814. 无向图中的最短路径)
+    - [lintcode]1563. 目的地的最短路径
     - 有权-最短路径 743. 网络延迟时间(Network Delay Time) [LeetCode] 
-    - 并查集：检查回路
+
+
+2. 并查集：检查回路
+3. 其他
+    - 887 鸡蛋掉落 
+    - [lintcode]单词接龙  
 
 
 [byteDance](https://leetcode-cn.com/explore/interview/card/bytedance/242/string/
