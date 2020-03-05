@@ -1,5 +1,24 @@
 
 
+### Mooc进度
+[MOOC](https://www.icourse163.org/home.htm?userId=1387487732#/home/course)
+1. 浙大-数据结构
+   - 第四讲 树（中）（1:06:31）[何钦铭]
+   - 第九讲 排序
+2. 北大-算法设计与分析（分治、dp、贪心、等等）
+3. 北航-算法设计与分析（有邀请dalao）
+
+
+### 找code练习
+1. [树：深搜（前、中、后遍历），广搜](lintcode里有)
+2. 图
+    - [lintcode](176. 图中两个点之间的路线)
+    - [lintcode](814. 无向图中的最短路径)
+    - 有权 最短路径 743. 网络延迟时间(Network Delay Time) [LeetCode] 
+    - [lintcode]单词接龙
+    - 并查集：检查回路
+
+
 [byteDance](https://leetcode-cn.com/explore/interview/card/bytedance/242/string/
 [Tencent](https://leetcode-cn.com/explore/interview/card/tencent/224/sort-and-search/932/)
 
@@ -9,7 +28,7 @@
 2. code分类顺序：标签 ----> 公司
     - [按公司分类](https://github.com/MysteryVaibhav/leetcode_company_wise_questions)
     - [LeetCode按照怎样的顺序来刷-知乎](https://zhuanlan.zhihu.com/p/104983442)
-    - NiuKe
+    - [nowcoder](https://www.nowcoder.com/contestRoom?from=zhnkw)
     - 领扣有腾讯、字节题[卡片](https://leetcode-cn.com/explore/)
 >可突击的
 3. 知识(比如机器/深度学习)
@@ -36,7 +55,6 @@
 [算法导论-课后答案](https://walkccc.github.io/CLRS/)
 
 ### 专项类
-[领扣-dp标签](https://leetcode-cn.com/tag/dynamic-programming/)
 [动态规划](https://www.bilibili.com/video/av45990457?from=search&seid=1523232997593245786)
 
 ## 课程类
