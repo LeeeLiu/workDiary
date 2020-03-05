@@ -1,21 +1,21 @@
 
 
-### Mooc进度
+### MOOC
 [MOOC](https://www.icourse163.org/home.htm?userId=1387487732#/home/course)
 1. 浙大-数据结构
    - 第四讲 树（中）（1:06:31）[何钦铭]
    - 第九讲 排序
+        * 快排延伸----第k小的数
 2. 北大-算法设计与分析（分治、dp、贪心、等等）
 3. 北航-算法设计与分析（有邀请dalao）
 
 
 ### 找code练习
-1. [树：深搜（前、中、后遍历），广搜](lintcode里有)
-2. 图
-    - [lintcode](176. 图中两个点之间的路线)
-    - [lintcode](814. 无向图中的最短路径)
-    - 有权 最短路径 743. 网络延迟时间(Network Delay Time) [LeetCode] 
+1. 图
+    - [lintcode](176. 图中两个点之间的路线)  邻接表存储的。。。
+    - [lintcode](814. 无向图中的最短路径) 邻接表存储的。。。
     - [lintcode]单词接龙
+    - 有权-最短路径 743. 网络延迟时间(Network Delay Time) [LeetCode] 
     - 并查集：检查回路
 
 
