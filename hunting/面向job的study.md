@@ -1,5 +1,7 @@
 
 
+
+
 ### MOOC
 [MOOC](https://www.icourse163.org/home.htm?userId=1387487732#/home/course)
 1. 浙大-数据结构
@@ -16,8 +18,6 @@
         - [lintcode](176. 图中两个点之间的路线)  
         - [lintcode](814. 无向图中的最短路径)
     - [lintcode]1563. 目的地的最短路径
-    - 有权-最短路径 743. 网络延迟时间(Network Delay Time) [LeetCode] 
-
 
 2. 并查集：检查回路
 3. 其他
