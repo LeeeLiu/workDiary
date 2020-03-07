@@ -1,7 +1,5 @@
 
 
-
-
 ### MOOC
 [MOOC](https://www.icourse163.org/home.htm?userId=1387487732#/home/course)
 1. 浙大-数据结构
@@ -12,21 +10,6 @@
 3. 北航-算法设计与分析（有邀请dalao）
 
 
-### 找code练习
-1. 图
-    - 邻接表
-        - [lintcode](176. 图中两个点之间的路线)  
-        - [lintcode](814. 无向图中的最短路径)
-    - [lintcode]1563. 目的地的最短路径
-
-2. 并查集：检查回路
-3. 其他
-    - 887 鸡蛋掉落 
-    - [lintcode]单词接龙  
-
-
-[byteDance](https://leetcode-cn.com/explore/interview/card/bytedance/242/string/
-[Tencent](https://leetcode-cn.com/explore/interview/card/tencent/224/sort-and-search/932/)
 
 ### plan
 >不可突击的
@@ -35,7 +18,9 @@
     - [按公司分类](https://github.com/MysteryVaibhav/leetcode_company_wise_questions)
     - [LeetCode按照怎样的顺序来刷-知乎](https://zhuanlan.zhihu.com/p/104983442)
     - [nowcoder](https://www.nowcoder.com/contestRoom?from=zhnkw)
-    - 领扣有腾讯、字节题[卡片](https://leetcode-cn.com/explore/)
+    - 力扣有腾讯、字节题
+        * [byteDance](https://leetcode-cn.com/explore/interview/card/bytedance/242/string/
+        * [Tencent](https://leetcode-cn.com/explore/interview/card/tencent/224/sort-and-search/932/)
 >可突击的
 3. 知识(比如机器/深度学习)
 
