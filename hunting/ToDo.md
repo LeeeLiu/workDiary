@@ -24,3 +24,19 @@
     - 单词接龙2
     - 最小生成树（不完全是） 去掉冗余边 让图变成树
         https://blog.csdn.net/yinyu19950811/article/details/89461166
+
+
+
+### follow  dalao
+
+https://dblp.uni-trier.de/
+
+Hung-yi Lee
+Weixuan Tang
+Weiqi Luo :  Audio Steganography Based on Iterative Adversarial Attacks Against Convolutional Neural Networks 
+
+
+1. iclr  iccv  cvpr  nips
+   steganography discrete integer hide
+2. tifs  
+   generative network reversible flow
