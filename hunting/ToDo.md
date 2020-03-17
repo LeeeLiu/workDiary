@@ -1,5 +1,13 @@
+**体温**
 
 
+
+
+2.27开课
+[深蓝学院](https://www.shenlanxueyuan.com/login)
+
+
+[贝叶斯与共轭](https://alexanderetz.com/2015/07/25/understanding-bayes-updating-priors-via-the-likelihood/)
 
 ### 视频
 [语音技术](https://space.bilibili.com/414359524?spm_id_from=333.788.b_765f7570696e666f.1)
@@ -20,23 +28,19 @@
 4. 排序类
 
 * 其他
-    - 887 鸡蛋掉落 
-    - 单词接龙2
+    - 蓄水池抽样
+    - 887 鸡蛋掉落
     - 最小生成树（不完全是） 去掉冗余边 让图变成树
         https://blog.csdn.net/yinyu19950811/article/details/89461166
+    - [互联网公司最常见的面试算法题有哪些？](https://www.zhihu.com/question/24964987/answer/586425979)
 
 
-
-### follow  dalao
-
-https://dblp.uni-trier.de/
-
-Hung-yi Lee
-Weixuan Tang
-Weiqi Luo :  Audio Steganography Based on Iterative Adversarial Attacks Against Convolutional Neural Networks 
+### 文献工具
+Mendeley：类似endnote 免费 有Win版本
+stork、feedemon：RSS文献追踪  有Win版本
 
 
-1. iclr  iccv  cvpr  nips
-   steganography discrete integer hide
-2. tifs  
-   generative network reversible flow
+### follow        
+1. iccv  cvpr  nips  iclr  AAAI
+2. tifs
+"Generative Model" AND flow OR reversible OR invertible OR hide OR steganography OR   discrete OR integer
