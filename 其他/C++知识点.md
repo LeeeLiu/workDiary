@@ -3,7 +3,8 @@
 1. vector没有push_front，只有push_back。
 2. 排序
 >condition1=is_sorted(nums.begin(),nums.end()); //是否是升序
->sort(A.begin()+index, A.end()); 
+>sort(A.begin()+index, A.end()); //递增
+>sort(vec.rbegin(), vec.rend()); //递减
 >reverse(A.begin(),A.end());
 3. 插入
 nums.insert(nums.begin()+i,value); // A.begin()是在前面插入，A.end()是在后面插入
@@ -54,3 +55,8 @@ int main()
     c='t';
     cout<<s<<endl; //结果为ttttttttttt
 ```
+9. pair用法
+    - pair <string,double> A ("tomatoes",3.25);
+    - pair <int, int>A = make_pair(1, 2);
+      pair <string,double> C = make_pair ("shoes",20.0);	
+    - pair <string,int> B;  B.first ="aa";  B.second = 99;
