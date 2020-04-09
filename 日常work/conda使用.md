@@ -22,6 +22,10 @@ conda env list
 >source activate lt_root
 >conda list
 
+### 复制环境
+conda create -n lt_baseOne --clone lt_base
+
+
 ### 退出当前环境
 `source deactivate`，默认回到base 环境
 `conda deactivate`
@@ -93,3 +97,11 @@ a = torch.rand(4, 3, 6, 7)
 print(a.permute(0, 2, 3, 1).shape)
 输出结果：
 torch.Size([4, 6, 7, 3])
+22. 形状
+    - a是torch tensor，则
+    - a.shape
+    - a.size()
+    - np.asarray((a.shape)).prod()
+23. 读写图像，注意
+    - 读写图像时候，注意，1维度问题，2映射到CPU上，3转化为numpy-tensor
+    `imageio.imwrite(path, img.squeeze().permute(1, 2, 0).cpu().numpy())`

@@ -1,13 +1,11 @@
 
-## Linux
-
 ### vim
 [一般使用方法](http://hpc.whu.edu.cn/info/1035/1027.htm)
 1. 按i
 2. ESC
 3. `:wq`
 
-### 一般
+### Linux
 1. DOS--> Linux格式
 `dos2unix`
 2. 查看当前目录下，每个文件夹的大小
@@ -16,6 +14,15 @@
 find images0/* -type f | wc -l
 4. 查看某个目录下，所有子目录个数。
 find images0/* -type d | wc -l
+5. [SSH远程连接断开后,程序继续运行](https://www.cnblogs.com/gotodsp/p/6375005.html)
+5. screen用法    
+    `screen -S      <your-screen-name>`
+    `ctrl+a，d`，离开会话。（关闭putty，程序继续运行）
+    `screen -ls`       查看所有会话名称
+    `screen -r      <your-screen-name>`  恢复会话
+    直接在screen里输入`exit`，退出screen
+    `screen -wipe`   清除所有dead会话
+    `ctrl+a， k`     kill当前会话
 
 移动
 `mv 源文件夹 目标文件夹`
@@ -23,7 +30,9 @@ find images0/* -type d | wc -l
 查看当前登录用户
 `users`
 `who`
+查看负载
 `top`
-
+查看图片
+`eog xxx.png`
 查看隐藏文件夹
 `ll -a`

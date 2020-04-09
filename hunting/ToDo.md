@@ -1,12 +1,51 @@
 
+### 找相同类别的image-net
 
+### generate
+1. 下载预训练model
+cd /home/liuting/project/proj/WaveGlow/pretrained_model
+wget https://api.ngc.nvidia.com/v2/models/nvidia/waveglow_ljs_256channels/versions/2/files/waveglow_256channels_ljs_v2.pt
+2. 梅尔谱图
+mel_spectrograms 移动至/home/liuting/project/proj/WaveGlow/mel_spectrograms
+3. 生成语音
+cd /home/liuting/project/proj/WaveGlow/waveglow
+sbatch --account=yzren --partition=gpu  --gres=gpu:1  --nodes=1  --time=72:00:00  ../batch_files/bf_inference.sh
+4. 写.sh
+python3 inference.py -f <(ls ../mel_spectrograms/*.pt) -w ../pretrained_model/waveglow_256channels_ljs_v2.pt    -o ../data/gen-10-wav  --is_fp16 -s 0.6
+
+### train
+1. 下载2.6 G  LJSpeech数据集  到 `data/`
+cd /home/liuting/project/proj/WaveGlow/data
+wget -c https://data.keithito.com/data/speech/LJSpeech-1.1.tar.bz2
+>解压：tar jxvf LJSpeech-1.1.tar.bz2
+
+2. 把数据分为训练/测试集
+cd /home/liuting/project/proj/WaveGlow/waveglow
+ls ../data/LJSpeech-1.1/wavs/*.wav | tail -n+10 > ../data/train_files.txt
+ls ../data/LJSpeech-1.1/wavs/*.wav | head -n10 > ../data/test_files.txt
+3. 训练
+cd /home/liuting/project/proj/WaveGlow/waveglow
+sbatch --account=yzren --partition=gpu  --gres=gpu:1 --nodes=1  --time=72:00:00  ../batch_files/bf_train.sh
+写.sh文件
+python ../waveglow/distributed.py -c config.json
+>对于multi-GPU，把train.py换成distributed.py
+For mixed precision trainingset "fp16_run": true on config.json.
+
+4. 测试 mel-spectrograms
+cd /home/liuting/project/proj/WaveGlow/waveglow
+sbatch --account=yzren --partition=gpu  --gres=gpu:1  --nodes=1  --time=72:00:00  ../batch_files/bf_test.sh
+>python mel2samp.py -f ../data/test_files.txt -o . -c config.json
+5. 自己训练的模型，生成
+>ls  ../mel_spectrograms/*.pt > ../data/mel_files.txt
+```
+cd /home/liuting/project/proj/WaveGlow/waveglow
+sbatch --account=yzren --partition=gpu  --gres=gpu:1  --nodes=1  --time=72:00:00  ../batch_files/bf_inference_myself.sh
+```
+python3 inference.py -f ../data/mel_files.txt -w ../checkpoints/waveglow_10000 -o . --is_fp16 -s 0.6
+
+
+### hongyilee
 https://www.bilibili.com/video/BV1QE411p7z3?p=5
-
-
-3.27 周五
-    下午2.30 组会
-    `晚上 19.30 -- 21.00 网安院-就业分享`
-    晚上 8点  深蓝课程
 
 
 ### 工作日志
@@ -38,6 +77,7 @@ https://www.bilibili.com/video/BV1QE411p7z3?p=5
     1. iccv  cvpr  nips  iclr  AAAI
     2. tifs
     "Generative Model" AND flow OR reversible OR invertible OR hide OR steganography OR   discrete OR integer
-3. old materials    
+3. old materials   
+    - [各种卷积](https://zhuanlan.zhihu.com/p/116889239)
     - [贝叶斯与共轭](https://alexanderetz.com/2015/07/25/understanding-bayes-updating-priors-via-the-likelihood/)
     - [码农-题目分类（名称可能不完全对应）](https://zhuanlan.zhihu.com/p/104983442)
