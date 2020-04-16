@@ -23,6 +23,8 @@ find images0/* -type d | wc -l
     直接在screen里输入`exit`，退出screen
     `screen -wipe`   清除所有dead会话
     `ctrl+a， k`     kill当前会话
+6. 编译多个文件得到的可执行程序，记得加上`./`。比如`./add_rir audio.raw dst.raw`
+
 
 移动
 `mv 源文件夹 目标文件夹`

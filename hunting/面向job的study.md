@@ -78,7 +78,7 @@
 
 
 ### 题解类
-[九章官网](https://www.jiuzhang.com/solutions/)
+[九章](https://www.jiuzhang.com/solutions/)
 [题解1-200](https://leetcode.wang/)
 [动画题解](https://github.com/MisterBooo/LeetCodeAnimation)
 [算法导论-课后答案](https://walkccc.github.io/CLRS/)

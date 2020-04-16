@@ -1,5 +1,25 @@
 
-### 找相同类别的image-net
+
+### hongyilee’s course
+[HMM-李宏毅](https://www.bilibili.com/video/BV1QE411p7z3?p=5)
+[HMM-统计学习方法](https://www.bilibili.com/video/BV1A7411u7zh)
+[self-attention](https://www.bilibili.com/video/BV14J411W7hw?p=60)
+[课件](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2019/Lecture/Transformer%20(v5).pdf)
+
+
+### now
+1. cd /dat01/liuting/proj/waveglow_qiu
+   sbatch -A yzren -p gpu --gres=gpu:1   txt2wav.sh
+   sbatch -A yzren -p gpu --gres=gpu:1   txt2wav_gen_cover.sh   
+   sbatch -A yzren -p gpu --gres=gpu:1   txt2wav__more_data.sh
+
+2. cd /dat01/liuting/proj/C/steganalysis
+    sbatch -A yzren -p gpu --gres=gpu:1   train_steganalysis.sh
+
+3. cd /dat01/liuting/proj/IDF/integer_discrete_flows
+    `sbatch --account=yzren --partition=gpu  --gres=gpu:2  --nodes=1    --time=72:00:00  ../batch_files/bf_img64_train.sh`
+4. `\squeue -A yzren`
+
 
 ### generate
 1. 下载预训练model
@@ -44,9 +64,6 @@ sbatch --account=yzren --partition=gpu  --gres=gpu:1  --nodes=1  --time=72:00:00
 python3 inference.py -f ../data/mel_files.txt -w ../checkpoints/waveglow_10000 -o . --is_fp16 -s 0.6
 
 
-### hongyilee
-https://www.bilibili.com/video/BV1QE411p7z3?p=5
-
 
 ### 工作日志
 1. 有code
@@ -58,8 +75,6 @@ https://www.bilibili.com/video/BV1QE411p7z3?p=5
     - piecewise-双射（只是辅助）：Real and Discrete (RAD) approach to deep mixture models
     - 用于NLP：discrete-flows:invertible-generative-models-of-discrete-data（Dinh主页有code但是404）
 
-### 待整理
-在绿色笔记本上
 
 ### 视频
 [深蓝学院](https://www.shenlanxueyuan.com/login)    3.27开课
