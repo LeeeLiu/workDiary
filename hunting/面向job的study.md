@@ -23,10 +23,11 @@
 * 其他
     - 蓄水池抽样
     - [最小生成树（不完全是） 去掉冗余边 让图变成树](https://blog.csdn.net/yinyu19950811/article/details/89461166)
-6. 扔东西系列
-    - [887.鸡蛋掉落](https://leetcode-cn.com/problems/super-egg-drop/)
-    - [扔杯子-腾讯题目](https://mp.weixin.qq.com/s?__biz=MzUyNjQxNjYyMg==&mid=2247484557&idx=1&sn=739d80488fe1169a9c9ca26ecfcdfba6&chksm=fa0e6b0ccd79e21a1c2b0d99db69f6206cddddfe2367742e9de1d7d17ec35a5ce29fa4e30d63&token=110841213&lang=zh_CN#rd)
     - [阿里春招-3.20场](https://www.nowcoder.com/discuss/386873)
+6. 脑洞系列
+    - [887.鸡蛋掉落](https://leetcode-cn.com/problems/super-egg-drop/)
+        * [动态规划一/二维数组](https://leetcode.com/problems/super-egg-drop/discuss/158974/C%2B%2BJavaPython-2D-and-1D-DP-O(KlogN))
+    
 
 ### 第二步，实战体验
 1. top 100 interview questions list
@@ -82,7 +83,6 @@
 [题解1-200](https://leetcode.wang/)
 [动画题解](https://github.com/MisterBooo/LeetCodeAnimation)
 [算法导论-课后答案](https://walkccc.github.io/CLRS/)
-
 
 
 ### mooc类

@@ -1,13 +1,24 @@
 
 
+### 在lt_baseTwo环境下安装包的方法
+>先激活环境
+1. conda install xxx
+2. pip install xxx
+    - pip install --upgrade xxx
+3. `/dat01/liuting/env/anaconda3/bin/pip install horovod==0.16.1`
+
+
+### 检查当前的包，是哪个版本
+ pip uninstall tensorflow==
+
 ### 启动anaconda可视化界面
 anaconda navigator
 ### 查看GPU
 nvidia-smi
 ### 新建环境
-conda create --name lt_base python=3.7
+conda create --name lt_baseTwo python=3.6
 ### 激活环境
->source activate lt_root
+source activate lt_baseTwo
 
 ### 在指定anaconda环境下安装package
 conda install ...      (CUDA 9.0)
@@ -23,18 +34,21 @@ conda env list
 >conda list
 
 ### 复制环境
-conda create -n lt_baseOne --clone lt_base
+conda create -n new_base --clone base  python=3.6
 
 
 ### 退出当前环境
 `source deactivate`，默认回到base 环境
 `conda deactivate`
 
-
 ### 在anaconda下改变python的版本
 conda create -n py36 python=3.6
 
+### 删除环境
+conda remove --name lt_baseTwo --all
 
+
+## torch
 
 ### torch学习链接
 [官网](https://pytorch.org/)

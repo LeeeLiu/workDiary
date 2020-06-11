@@ -25,6 +25,9 @@ find images0/* -type d | wc -l
     `ctrl+a， k`     kill当前会话
 6. 编译多个文件得到的可执行程序，记得加上`./`。比如`./add_rir audio.raw dst.raw`
 
+将dir1下的文件复制到dir2,不包括dir1目录
+cp -r /dat01/liuting/proj/IDF/batch_files/.   /workfs/liuting/IDF_dct_domain/batch_files
+
 
 移动
 `mv 源文件夹 目标文件夹`
