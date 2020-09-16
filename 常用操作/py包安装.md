@@ -9,7 +9,10 @@
     [python库](https://www.lfd.uci.edu/~gohlke/pythonlibs/)下载.whl文件，
    cmd打开.whl文件所在目录，pip install xxx.whl
 
-3. GitHub上，下载python包的源码，打开setup.py对应的文件夹，鼠标右键git bash here，输入“pip install .”即可。
+3. GitHub上，下载python包的源码，打开setup.py对应的文件夹，
+    - 鼠标右键git bash here，
+    - `pip install .`
+
 4. >pip install --index-url  xxx [包的名字，如tensorflow]
 （xxx如https://pypi.douban.com/simple）
 >pip install [包的名字] -i [URL]
