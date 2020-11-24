@@ -51,6 +51,7 @@ conda remove --name lt_baseTwo --all
 ## torch
 
 ### torch学习链接
+[中文文档](https://pytorch-cn.readthedocs.io/zh/latest/)
 [官网](https://pytorch.org/)
 [手册](https://github.com/MorvanZhou/PyTorch-Tutorial)
 [deeplizard](https://deeplizard.com/learn/video/v5cngxo4mIg)
