@@ -1,5 +1,5 @@
 
-
+# conda
 ### 在lt_baseTwo环境下安装包的方法
 >先激活环境
 1. conda install xxx
@@ -39,7 +39,7 @@ conda create -n new_base --clone base  python=3.6
 
 ### 退出当前环境
 `source deactivate`，默认回到base 环境
-`conda deactivate`
+`conda deactivate`  回到系统环境
 
 ### 在anaconda下改变python的版本
 conda create -n py36 python=3.6
